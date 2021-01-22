@@ -1,7 +1,6 @@
 #!groovy
 pipeline{
-    agent { label 'docker_io'
-    }  
+    agent any 
     stages{
         stage('docker-build'){
             steps{
