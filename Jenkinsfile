@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('docker-build'){
             steps{
-                sh 'docker build .'
+                sh '/usr/bin/python3 main.py'
             }
         }
     }
